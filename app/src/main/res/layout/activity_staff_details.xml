@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteX="1dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/StPhoto"
             android:layout_width="295dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,7 +27,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/Stname"
@@ -39,18 +39,31 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/StTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="TextView"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
                 android:id="@+id/Stemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/Stphonenumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textSize="12sp"
+                android:textStyle="italic" />
 
         </LinearLayout>
 

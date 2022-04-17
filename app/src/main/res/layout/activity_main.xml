@@ -16,9 +16,9 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="match_parent"
+            android:layout_width="363dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ucc_logo" />
+            app:srcCompat="@drawable/ucc_logo_png" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,12 +27,12 @@
             android:padding="5dp">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnAdmission"
                 android:layout_width="113dp"
                 android:layout_height="wrap_content"
                 android:paddingLeft="5dp"
                 android:paddingRight="5dp"
-                android:text="Button" />
+                android:text="Admission" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -40,12 +40,12 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnStaff"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="5dp"
-                android:text="Button" />
+                android:text="Directory" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -63,34 +63,47 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="173dp"
             android:orientation="horizontal"
             android:padding="25dp">
 
-            <ImageView
-                android:id="@+id/imageView6"
+            <ImageButton
+                android:id="@+id/ibFB"
                 android:layout_width="wrap_content"
-                android:layout_height="142dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
-                app:srcCompat="@drawable/facebook_logo" />
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/facebook" />
 
-            <ImageView
-                android:id="@+id/imageView7"
+            <ImageButton
+                android:id="@+id/ibIG"
                 android:layout_width="wrap_content"
-                android:layout_height="142dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/instagram" />
 
-            <ImageView
-                android:id="@+id/imageView8"
+            <ImageButton
+                android:id="@+id/ibTwitter"
                 android:layout_width="wrap_content"
-                android:layout_height="141dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:padding="10dp"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/twitter" />
         </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/sym_action_email" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
