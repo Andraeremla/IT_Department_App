@@ -53,12 +53,12 @@
                 android:layout_weight="1" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnCourses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingLeft="25dp"
-                android:text="Button" />
+                android:text="Courses" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +75,7 @@
                 android:background="@android:color/transparent"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/facebook" />
+                app:srcCompat="@drawable/facebook_logo" />
 
             <ImageButton
                 android:id="@+id/ibIG"
@@ -85,7 +85,7 @@
                 android:background="@android:color/transparent"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/instagram" />
+                app:srcCompat="@drawable/instagram_round" />
 
             <ImageButton
                 android:id="@+id/ibTwitter"
@@ -95,7 +95,7 @@
                 android:background="@android:color/transparent"
                 android:padding="5dp"
                 android:scaleType="fitCenter"
-                app:srcCompat="@drawable/twitter" />
+                app:srcCompat="@drawable/twitter_round" />
         </LinearLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -103,6 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:clickable="true"
+            app:fabSize="normal"
             app:srcCompat="@android:drawable/sym_action_email" />
 
     </LinearLayout>
