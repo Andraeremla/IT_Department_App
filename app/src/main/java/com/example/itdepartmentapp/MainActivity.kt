@@ -53,6 +53,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Directory::class.java)
             startActivity(intent)
         }
+        // Opens time table
+        val btntable: Button = findViewById(R.id.timeT)
+        btntable.setOnClickListener{
+            val intent = Intent(this, Timetable::class.java)
+            startActivity(intent)
+        }
+
 
 
 

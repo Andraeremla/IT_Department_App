@@ -13,5 +13,18 @@
         <item>NDAJAH, Peter</item>
     </string-array>
 
+    <string-array name="timetable">
+        <item>Computer Information Systems</item>
+        <item>Discrete Mathematics 1</item>
+        <item>Programming Techniques</item>
+        <item>Database Management Systems 1</item>
+        <item>Computer Essentails and Troubleshooting</item>
+        <item> Object Oriented Programming Using C++</item>
+        <item>Data Communications and Networks</item>
+        <item>Internet Authoring 1</item>
+        <item>Data Structures and File Management 1</item>
+        <item>Systems Analysis and Design</item>
+    </string-array>
+
 
 </resources>
