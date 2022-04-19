@@ -60,6 +60,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // Opens Course Database
+        val btncourses: Button = findViewById(R.id.btnCourses)
+        btncourses.setOnClickListener{
+            val intent = Intent(this, CourseListing::class.java)
+            startActivity(intent)
+        }
+
 
 
 

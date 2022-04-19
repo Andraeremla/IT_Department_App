@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ITDepartmentApp">
         <activity
+            android:name=".CourseListing"
+            android:exported="false" />
+        <activity
+            android:name=".CoursesView"
+            android:exported="false" />
+        <activity
             android:name=".TimetableDetails"
             android:exported="false" />
         <activity
