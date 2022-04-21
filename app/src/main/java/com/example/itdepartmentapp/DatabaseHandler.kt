@@ -6,13 +6,12 @@ import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import java.io.File
+import java.io.*
 
 class DatabaseHandler(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, 1)  {
 
     companion object {
         val DATABASE_NAME = "itdepartment.db"
-        val ASSET_PATH = "database"
         val TABLE_NAME = "courses"
         val ID = "ID"
         val Code = "Code"
@@ -20,18 +19,25 @@ class DatabaseHandler(context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
         val credits = "credits"
         val Prerequsite = "Prerequsite"
         val Details = "Details"
-
-
-
     }
 
 
+
+
+
+
     override fun onCreate(db: SQLiteDatabase) {
+        db.execSQL("create table $TABLE_NAME (ID INTEGER PRIMARY KEY AUTOINCREMENT,Code TEXT,Name INTEGER,credits TEXT, prerequsite TEXT, Details Text)")
+
+
 
     }
 
    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+       db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
 
+
+       onCreate(db)
     }
 
     //Insert data into text_books_table
